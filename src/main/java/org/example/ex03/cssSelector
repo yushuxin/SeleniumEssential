@@ -1,0 +1,34 @@
+//id
+driver.findElement(By.cssSelector('#id'));
+
+//class
+driver.findElement(By.cssSelector('.className'));
+
+//name
+driver.findElement(By.cssSelector("input[name='q']"));
+
+//Tag and Class
+driver.findElement(By.cssSelector("input.q")); //q is the class
+
+//Tag and ID
+driver.findElement(By.cssSelector("input#q")); //q is the ID
+
+//Tab and Attribute
+driver.findElement(By.cssSelector("input[type='radio']"));
+driver.findElement(By.cssSelector("input[value='radio button']"));
+
+//multiple classes
+driver.findElement(By.cssSelector(".btn.btn-lg.btn-success"));
+
+//text matching
+driver.findElement(By.cssSelector("a[id^='id_prefix_']")); //prefix
+driver.findElement(By.cssSelector("a[id$='_id_suffix']")); //suffix
+driver.findElement(By.cssSelector("div[id*='substring']")); //substring
+
+//Child
+driver.findElement(By.cssSelector("div#parent a")); //div-a, find a
+
+//Nth-child
+driver.findElement(By.cssSelector("#list li:nth-child(2)")); // ul-li,li,li
+
+
